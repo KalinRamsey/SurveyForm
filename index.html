@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<form id="survey-form">
+			<div id="survey-form-header">
+				<h1 id="title">Survey Form</h1>
+				<p id="description">
+					Please fill out the provided spaces and submit your response
+				</p>
+			</div>
+
+			<div id="survey-form-content">
+				<div id="survey-select">
+					<div id="survey-radio">
+						<label class="radio-label">
+							<input type="radio" name="radio" value="1" />
+							Public
+						</label>
+
+						<label class="radio-label">
+							<input type="radio" name="radio" value="2" />
+							Private
+						</label>
+
+						<label class="radio-label">
+							<input type="radio" name="radio" value="3" />
+							Other
+						</label>
+					</div>
+				</div>
+				<fieldset>
+					<div>
+						<label id="name-label" for="name">Name:</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Enter name here"
+							required
+						/>
+					</div>
+
+					<div>
+						<label id="email-label" for="email">Email:</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter email here"
+							required
+						/>
+					</div>
+
+					<div>
+						<label id="number-label" for="number">Number:</label>
+						<input
+							type="number"
+							name="number"
+							id="number"
+							min="0"
+							max="5"
+							placeholder="Enter a number from 0 - 5"
+						/>
+					</div>
+
+					<div>
+						<label for="dropdown">Option:</label>
+						<select id="dropdown">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+				</fieldset>
+
+				<div id="survey-form-submit">
+					<ul id="survey-check">
+						<li>
+							<label>
+								<input type="checkbox" value="1" name="checkbox" />
+								Check 1
+							</label>
+						</li>
+
+						<li>
+							<label>
+								<input type="checkbox" value="2" name="checkbox" />
+								Check 2
+							</label>
+						</li>
+
+						<li>
+							<label>
+								<input type="checkbox" value="3" name="checkbox" />
+								Check 3
+							</label>
+						</li>
+					</ul>
+					<textarea
+						name="textarea"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Enter your message here"
+					></textarea>
+
+					<input id="submit" type="submit" />
+				</div>
+			</div>
+		</form>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
